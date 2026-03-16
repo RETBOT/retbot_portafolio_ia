@@ -16,8 +16,8 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   const cardContent = (
-    <div className='bg-tertiary p-4 sm:p-5 rounded-2xl w-full sm:w-[360px] h-full'>
-      <div className='relative w-full h-[210px] sm:h-[230px]'>
+    <div className='panel-surface glow-hover p-4 sm:p-5 rounded-2xl w-full sm:w-[360px] h-full'>
+      <div className='relative w-full h-[208px] sm:h-[232px]'>
         <img
           src={image}
           alt={name}
@@ -28,7 +28,7 @@ const ProjectCard = ({
           <button
             type='button'
             onClick={() => window.open(source_code_link, "_blank")}
-            className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border-0'
+            className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border border-[#7dd3fc66]'
             aria-label={`Open ${name}`}
           >
             <img
@@ -41,15 +41,15 @@ const ProjectCard = ({
       </div>
 
       <div className='mt-5'>
-        <h3 className='text-white font-bold text-[22px] sm:text-[24px]'>{name}</h3>
-        <p className='mt-2 text-secondary text-[14px] leading-6'>{description}</p>
+        <h3 className='text-white font-bold text-2xl'>{name}</h3>
+        <p className='mt-2 text-secondary text-sm leading-7'>{description}</p>
       </div>
 
       <div className='mt-4 flex flex-wrap gap-2'>
         {tags.map((tag) => (
           <p
             key={`${name}-${tag.name}`}
-            className={`text-[14px] ${tag.color}`}
+            className={`text-sm ${tag.color}`}
           >
             #{tag.name}
           </p>
@@ -74,8 +74,10 @@ const ProjectCard = ({
 const Works = ({ language, esTelefono }) => {
   const [titulo, setTitulo] = useState('Mi trabajo');
   const [subTitulo, setSubtitulo] = useState('Proyectos');
+  const [tituloDestacados, setTituloDestacados] = useState('Proyectos destacados');
+  const [tituloTodos, setTituloTodos] = useState('Todos los proyectos');
 
-  const [descripcion, setDescripcion] = useState(`A continuación, se presentan algunos proyectos que muestran mis habilidades y experiencia a través de ejemplos concretos de mi trabajo. Cada proyecto se describe brevemente y se incluyen enlaces a repositorios de código y demostraciones en vivo. Estos proyectos reflejan mi capacidad para resolver problemas complejos, trabajar con diversas tecnologías y gestionar proyectos de manera efectiva.`);
+  const [descripcion, setDescripcion] = useState(`Estos proyectos reflejan mi experiencia construyendo soluciones web, moviles y de escritorio. Incluyen aplicaciones empresariales, herramientas productivas y desarrollos tecnicos que demuestran integracion de tecnologias, enfoque en negocio y capacidad de entrega de extremo a extremo.`);
 
   const [projects, setProjects] = useState(projectsEs);
 
@@ -83,13 +85,18 @@ const Works = ({ language, esTelefono }) => {
 
     setTitulo(language !== 'en' ? 'My work' : 'Mi trabajo');
     setSubtitulo(language !== 'en' ? 'Projects.' : 'Proyectos.');
+    setTituloDestacados(language !== 'en' ? 'Featured projects' : 'Proyectos destacados');
+    setTituloTodos(language !== 'en' ? 'All projects' : 'Todos los proyectos');
 
-    setDescripcion(language !== 'en' ? 'The following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.'
-      : 'A continuación, se presentan algunos proyectos que muestran mis habilidades y experiencia a través de ejemplos concretos de mi trabajo. Cada proyecto se describe brevemente y se incluyen enlaces a repositorios de código y demostraciones en vivo. Estos proyectos reflejan mi capacidad para resolver problemas complejos, trabajar con diversas tecnologías y gestionar proyectos de manera efectiva.');
+    setDescripcion(language !== 'en' ? 'These projects reflect my experience building web, mobile, and desktop solutions. They include enterprise applications, productivity tools, and technical developments that demonstrate technology integration, business focus, and end-to-end delivery capability.'
+      : 'Estos proyectos reflejan mi experiencia construyendo soluciones web, moviles y de escritorio. Incluyen aplicaciones empresariales, herramientas productivas y desarrollos tecnicos que demuestran integracion de tecnologias, enfoque en negocio y capacidad de entrega de extremo a extremo.');
 
     setProjects(language !== 'en' ? projectsEn : projectsEs);
 
   }, [language])
+
+  const featuredProjects = projects.slice(0, 3);
+  const allProjects = projects.slice(3);
 
 
   return (
@@ -101,13 +108,21 @@ const Works = ({ language, esTelefono }) => {
             <h2 className={`${styles.sectionHeadText}`}>{subTitulo}</h2>
           </div><div className='w-full flex'>
             <p
-              className='mt-6 text-secondary text-[16px] sm:text-[20px] max-w-5xl leading-[30px]'
+              className='mt-6 text-secondary text-base sm:text-xl max-w-5xl leading-8'
             >
               {descripcion}
             </p>
-          </div><div className='mt-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 place-items-stretch'>
-            {projects.map((project, index) => (
+          </div>
+          <h3 className='mt-12 text-2xl sm:text-3xl font-bold text-white'>{tituloDestacados}</h3>
+          <div className='mt-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 place-items-stretch'>
+            {featuredProjects.map((project, index) => (
               <ProjectCard key={`project-${index}`} index={index} {...project} />
+            ))}
+          </div>
+          <h3 className='mt-14 text-2xl sm:text-3xl font-bold text-white'>{tituloTodos}</h3>
+          <div className='mt-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 place-items-stretch'>
+            {allProjects.map((project, index) => (
+              <ProjectCard key={`project-all-${index}`} index={index + featuredProjects.length} {...project} />
             ))}
           </div>
         </>) : (
@@ -117,13 +132,21 @@ const Works = ({ language, esTelefono }) => {
             <h2 className={`${styles.sectionHeadText}`}>{subTitulo}</h2>
           </div><div className='w-full flex'>
             <p
-              className='mt-6 text-secondary text-[16px] sm:text-[20px] max-w-5xl leading-[30px]'
+              className='mt-6 text-secondary text-base max-w-5xl leading-7'
             >
               {descripcion}
             </p>
-          </div><div className='mt-10 grid grid-cols-1 gap-7'>
-            {projects.map((project, index) => (
+          </div>
+          <h3 className='mt-10 text-2xl font-bold text-white'>{tituloDestacados}</h3>
+          <div className='mt-5 grid grid-cols-1 gap-7'>
+            {featuredProjects.map((project, index) => (
               <ProjectCard key={`project-${index}`} index={index} {...project} />
+            ))}
+          </div>
+          <h3 className='mt-10 text-2xl font-bold text-white'>{tituloTodos}</h3>
+          <div className='mt-5 grid grid-cols-1 gap-7'>
+            {allProjects.map((project, index) => (
+              <ProjectCard key={`project-all-${index}`} index={index + featuredProjects.length} {...project} />
             ))}
           </div>
         </>)}
@@ -132,4 +155,4 @@ const Works = ({ language, esTelefono }) => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

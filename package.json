@@ -6,7 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "agent:qa": "node scripts/opencode-agent.mjs qa",
+    "agent:content": "node scripts/opencode-agent.mjs content",
+    "agent:pr": "node scripts/opencode-agent.mjs pr",
+    "agent:run": "node scripts/opencode-agent.mjs run",
+    "uiux:agent": "node tools/uiux-agent/cli.mjs",
+    "uiux:self": "node tools/uiux-agent/cli.mjs --target . --mode all --format both --pr-comment"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",

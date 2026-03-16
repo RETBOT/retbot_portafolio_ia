@@ -48,7 +48,11 @@ export const navLinksEn = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
 ];
 
@@ -59,7 +63,11 @@ export const navLinksEs = [
   },
   {
     id: "work",
-    title: "Trabajo",
+    title: "Experiencia",
+  },
+  {
+    id: "projects",
+    title: "Proyectos",
   },
 ];
 
@@ -141,9 +149,9 @@ const experiencesEs = [
     iconBg: "#FFFFFF",
     date: "Nov 2025 - Actualidad",
     points: [
-      "Desarrollo y mantenimiento de aplicaciones web, moviles y de escritorio orientadas a sistemas administrativos.",
-      "Implementacion de nuevas funcionalidades utilizando .NET, C#, MAUI, SQL Server y APIs REST.",
-      "Mejora y optimizacion de procesos dentro de aplicaciones empresariales.",
+      "Diseno, desarrollo y mantenimiento de aplicaciones web, moviles y de escritorio orientadas a procesos administrativos.",
+      "Implementacion de funcionalidades con .NET, C#, .NET MAUI, SQL Server y APIs REST para integrar flujos operativos.",
+      "Optimizacion de modulos existentes para mejorar estabilidad, tiempos de respuesta y experiencia de usuario.",
     ]
   },
   {
@@ -153,10 +161,10 @@ const experiencesEs = [
     iconBg: "#FFFFFF",
     date: "Jul 2024 - Nov 2025",
     points: [
-      "Desarrollo y personalización de aplicaciones empresariales utilizando GeneXus, integradas en un sistema ERP con DominioM BI. ",
-      "Creación, mejoras y publicación de aplicaciones móviles multiplataforma con Xamarin y Flutter, incluyendo mejoras y publicación de NovaPak Ordenes. ",
-      "Desarrollo de aplicaciones web y APIs RESTful usando .NET, asegurando escalabilidad y rendimiento óptimo. ",
-      "Manejo avanzado de SQL Server para diseño de bases de datos, optimización de consultas y gestión de datos.",
+      "Desarrollo y personalizacion de aplicaciones empresariales con GeneXus integradas a un ecosistema ERP.",
+      "Construccion, mejora y publicacion de aplicaciones moviles multiplataforma con Xamarin y Flutter.",
+      "Desarrollo de aplicaciones web y APIs REST con .NET, priorizando escalabilidad y mantenibilidad.",
+      "Diseno y optimizacion de bases de datos en SQL Server para procesos transaccionales de negocio.",
     ]
   },
   {
@@ -166,10 +174,10 @@ const experiencesEs = [
     iconBg: "#FFFFFF",
     date: "Oct 2023 - Jul 2024",
     points: [
-      "Desarrollo de aplicaciones móviles con Flutter para plataformas Android e iOS.",
-      "Actualización de sitios web utilizando jQuery, HTML, CSS y DevExpress.",
-      "Modificación y soporte de programas existentes en Visual Basic 6.",
-      "Gestión de APIs desarrolladas en Visual Basic 6 y SQL Server para aplicaciones móviles y web.",
+      "Desarrollo de aplicaciones moviles con Flutter para Android e iOS en entornos de produccion.",
+      "Mantenimiento y evolucion de sitios web con jQuery, HTML, CSS y DevExpress.",
+      "Soporte y actualizacion de sistemas heredados en Visual Basic 6.",
+      "Integracion de APIs y servicios con Visual Basic 6 y SQL Server para aplicaciones web y moviles.",
     ]
   },
   {
@@ -179,13 +187,11 @@ const experiencesEs = [
     iconBg: "#FFFFFF",
     date: "Ene 2023 - Oct 2023",
     points: [
-      "Desarrollador de software en C# utilizando el patrón de diseño MVC y el framework .NET Core.",
-      "Amplia experiencia en el desarrollo de aplicaciones web y especializado en la creación de scrapers para extraer datos de diversas fuentes en línea y automatizar la recopilación de información.",
-      "Utilización efectiva de tecnologías como HtmlAgilityPack, HTML, JavaScript y CSS para implementar soluciones de scraping y mejorar la eficiencia en la recopilación de datos.",
-      "Colaborador destacado en equipos interfuncionales, asegurando la entrega de soluciones eficientes y de alta calidad.",
-      "Participación activa en revisiones de código y proporcionando comentarios constructivos para mejorar la calidad del software.",
-      "Experiencia en el desarrollo de aplicaciones web utilizando la pila MERN, incluyendo React.js, Express.js, Node.js y MongoDB.",
-      "Participación activa en revisiones de código, brindando comentarios constructivos y mejorando la calidad del software."
+      "Desarrollo de aplicaciones web en C# con patron MVC y framework .NET Core.",
+      "Implementacion de scrapers para extraccion y automatizacion de datos desde distintas fuentes en linea.",
+      "Uso de HtmlAgilityPack, HTML, JavaScript y CSS para construir soluciones de captura de informacion.",
+      "Participacion en equipos interfuncionales y revisiones de codigo para mejorar calidad y mantenibilidad.",
+      "Colaboracion en proyectos web con stack React.js, Express.js, Node.js y MongoDB.",
     ]
   }
 ];
@@ -198,9 +204,9 @@ const experiencesEn = [
     iconBg: "#FFFFFF",
     date: "Nov 2025 - Present",
     points: [
-      "Development and maintenance of web, mobile, and desktop applications focused on administrative systems.",
-      "Implementation of new features using .NET, C#, MAUI, SQL Server, and REST APIs.",
-      "Process improvements and optimization in enterprise applications.",
+      "Design, development, and maintenance of web, mobile, and desktop applications for administrative workflows.",
+      "Feature implementation with .NET, C#, .NET MAUI, SQL Server, and REST APIs to integrate core operational flows.",
+      "Optimization of existing modules to improve stability, response times, and user experience.",
     ]
   },
   {
@@ -210,10 +216,10 @@ const experiencesEn = [
     iconBg: "#FFFFFF",
     date: "Jul 2024 - Nov 2025",
     points: [
-      "Development and customization of enterprise applications using GeneXus, integrated into an ERP system with DominioM BI.",
-      "Creation, enhancement, and deployment of cross-platform mobile applications with Xamarin and Flutter, including improvements and deployment of NovaPak Orders.",
-      "Development of web applications and RESTful APIs using .NET, ensuring scalability and optimal performance.",
-      "Advanced management of SQL Server for database design, query optimization, and data management.",
+      "Development and customization of enterprise applications with GeneXus integrated into ERP workflows.",
+      "Creation, enhancement, and release of cross-platform mobile apps using Xamarin and Flutter.",
+      "Web applications and REST API development with .NET, focused on scalability and maintainability.",
+      "SQL Server database design and query optimization for transactional business processes.",
     ]
   },
   {
@@ -221,12 +227,12 @@ const experiencesEn = [
     company_name: "Ingeniería Computacional Creativa S.A de C.V.",
     icon: icc,
     iconBg: "#FFFFFF",
-    date: "Oct 2023 - Present",
+    date: "Oct 2023 - Jul 2024",
     points: [
-      "Developing mobile applications with Flutter for Android and iOS platforms.",
-      "Updating websites using jQuery, HTML, CSS, and DevExpress.",
-      "Modifying and providing support for existing programs in Visual Basic 6.",
-      "Managing APIs developed in Visual Basic 6 and SQL Server for mobile and web applications.",
+      "Development of Flutter mobile applications for Android and iOS in production environments.",
+      "Maintenance and evolution of websites using jQuery, HTML, CSS, and DevExpress.",
+      "Support and updates for legacy systems built with Visual Basic 6.",
+      "API and service integrations with Visual Basic 6 and SQL Server for web and mobile applications.",
     ],
   },
   {
@@ -236,13 +242,11 @@ const experiencesEn = [
     iconBg: "#FFFFFF",
     date: "Jan 2023 - Oct 2023",
     points: [
-      "Software developer in C#, utilizing the MVC design pattern and .NET Core framework.",
-      "Extensive experience in web application development, specializing in creating scrapers to extract data from various online sources and automate information collection.",
-      "Effective utilization of technologies like HtmlAgilityPack, HTML, JavaScript, and CSS to implement scraping solutions and enhance data collection efficiency.",
-      "Outstanding collaborator in cross-functional teams, ensuring the delivery of efficient and high-quality solutions.",
-      "Active participation in code reviews and providing constructive feedback to improve software quality.",
-      "Experience in web application development using the MERN stack, including React.js, Express.js, Node.js, and MongoDB.",
-      "Active participation in code reviews, offering constructive feedback and enhancing software quality."
+      "Web application development in C# using MVC pattern and .NET Core framework.",
+      "Implementation of scrapers to extract and automate data collection from multiple online sources.",
+      "Use of HtmlAgilityPack, HTML, JavaScript, and CSS to build robust scraping solutions.",
+      "Cross-functional collaboration and code review participation to improve quality and maintainability.",
+      "Contribution to web solutions using React.js, Express.js, Node.js, and MongoDB.",
     ],
   }
 ];

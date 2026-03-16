@@ -5,19 +5,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#18191b",// "#050816",
-        secondary: "#FFFFFF", // "#aaa6c3",
-        tertiary: "#273433", //"#151030",
-        "black-100": "#18262e",//"#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
-        title: "#15B5E8",
-        selected: "#15B5E8",
-        no_selected: "#FFFFFF",
+        primary: "#0E131A",
+        secondary: "#A9B7C8",
+        tertiary: "#161D26",
+        "black-100": "#121A24",
+        "black-200": "#0A0F16",
+        "white-100": "#EAF4FF",
+        title: "#22D3EE",
+        selected: "#22D3EE",
+        no_selected: "#EAF4FF",
+        accent: "#2EA8FF",
+        surface: "#1A2430",
         
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #211e35",
+        card: "0 22px 50px -28px rgba(35, 179, 227, 0.45)",
       },
       screens: {
         xs: "450px",

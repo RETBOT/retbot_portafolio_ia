@@ -1,18 +1,18 @@
 const styles = {
-  paddingX: "sm:px-3 px-3",
-  paddingY: "sm:py-3 py-3",
-  padding: "sm:px-16 px-6 sm:py-16 py-5",
-  padding2: "sm:px-24 px-6 sm:py-16 py-5",
+  paddingX: "sm:px-4 px-4",
+  paddingY: "sm:py-4 py-4",
+  padding: "sm:px-16 px-6 sm:py-16 py-8",
+  padding2: "sm:px-24 px-6 sm:py-16 py-8",
 
   heroHeadText:
-    "font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
+    "font-black text-white lg:text-[72px] sm:text-[56px] xs:text-[48px] text-[36px] lg:leading-[88px] mt-2",
   heroSubText:
-    "text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
+    "text-secondary font-medium lg:text-[28px] sm:text-[24px] xs:text-[20px] text-[16px] lg:leading-[36px]",
 
   sectionHeadText:
-    "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+    "text-white font-black md:text-[56px] sm:text-[48px] xs:text-[40px] text-[32px] leading-tight",
   sectionSubText:
-    "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+    "sm:text-[16px] text-[12px] text-title uppercase tracking-[0.2em]",
 };
 
 export { styles };

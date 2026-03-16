@@ -3,16 +3,22 @@ import { styles } from "../styles"
 
 const Hero = ({ language, esTelefono }) => {
   const [saludo, setSaludo] = useState('Hola, soy');
-  const [dev, setDev] = useState('Desarrollador de Software ');
+  const [dev, setDev] = useState('Desarrollador Full Stack de Software');
+  const [resumen, setResumen] = useState('Especializado en soluciones web, moviles y de escritorio para entornos empresariales.');
 
   useEffect(() => {
     setSaludo(language !== 'en' ? `Hi, I'm` : 'Hola, soy');
-    setDev(language !== 'en' ? "Software Developer." : 'Desarrollador de Software.');
+    setDev(language !== 'en' ? "Full Stack Software Developer" : 'Desarrollador Full Stack de Software');
+    setResumen(
+      language !== 'en'
+        ? 'Focused on web, mobile, and desktop solutions for business platforms, with strong experience in .NET, MAUI, Flutter, SQL Server, and REST APIs.'
+        : 'Especializado en soluciones web, moviles y de escritorio para plataformas empresariales, con experiencia en .NET, MAUI, Flutter, SQL Server y APIs REST.'
+    );
   }, [language])
 
   return (
     <section className={`relative w-full min-h-screen mx-auto flex flex-col justify-center items-center`}>
-      <div className={` max-w-screen-2xl ${styles.paddingX} flex flex-row items-start gap-5 flex-wrap`}>
+      <div className={` max-w-screen-2xl ${styles.paddingX} flex flex-row items-start gap-5 flex-wrap mt-12`}>
         <div className="flex flex-row">
           <div className='flex flex-col justify-center items-center mt-5 mr-5'>
             <div className='w-5 h-5 rounded-full bg-title' />
@@ -23,11 +29,17 @@ const Hero = ({ language, esTelefono }) => {
             <h1 className={`${styles.heroHeadText} text-white`}>
               {saludo} <span className='text-title'>Roberto <br className='sm:block hidden' />Esquivel Troncoso</span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              {dev} <br className='sm:block hidden' />
+            <p className={`${styles.heroSubText} mt-2 text-white-100 font-semibold`}>
+              {dev}
             </p>
-            <div className='flex flex-row'>
-              <div className="flex w-10 h-10 rounded-full bg-[#FFFFFF] justify-center items-center">
+            <p className='mt-4 max-w-3xl text-[15px] sm:text-[17px] leading-7 text-secondary'>
+              {resumen}
+            </p>
+            <div className='mt-5 inline-flex items-center rounded-full border border-[#2EA8FF55] bg-[#17212d] px-4 py-2 text-[12px] sm:text-[13px] tracking-wide text-[#A9B7C8]'>
+              {language !== 'en' ? 'Building Web, Mobile, and Desktop Software Solutions' : 'Desarrollo soluciones de software Web, Movil y Escritorio'}
+            </div>
+            <div className='flex flex-row mt-6'>
+              <div className="flex w-10 h-10 rounded-full bg-[#EAF4FF] justify-center items-center glow-hover">
                 <div className="group flex relative">
                   <a
                     href="https://www.facebook.com/robertoesquiveltroncoso" className="no-underline text-primary hover:text-primary-100" target="_blank" rel="noopener noreferrer">
@@ -39,7 +51,7 @@ const Hero = ({ language, esTelefono }) => {
                 </div>
               </div>
               <div className="mr-2" />
-              <div className="flex w-10 h-10 rounded-full bg-[#FFFFFF] justify-center items-center ">
+              <div className="flex w-10 h-10 rounded-full bg-[#EAF4FF] justify-center items-center glow-hover">
                 <div className="group flex relative">
                   <a href="https://www.linkedin.com/in/roberto-esquivel-troncoso/" className="no-underline text-primary hover:text-primary-100" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -50,7 +62,7 @@ const Hero = ({ language, esTelefono }) => {
                 </div>
               </div>
               <div className="mr-2" />
-              <div className="flex w-10 h-10 rounded-full bg-[#FFFFFF] justify-center items-center border-2 border-white">
+              <div className="flex w-10 h-10 rounded-full bg-[#EAF4FF] justify-center items-center border border-[#a9b7c855] glow-hover">
                 <div className="group flex relative">
                   <a href="https://github.com/RETBOT/" className="no-underline text-primary hover:text-primary-100" target="_blank" rel="noopener noreferrer">
                     <svg fill="currentColor" className="h-8 w-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +73,7 @@ const Hero = ({ language, esTelefono }) => {
                 </div>
               </div>
               <div className="mr-2" />
-              <div className="flex w-10 h-10 rounded-full bg-[#FFFFFF] justify-center items-center ">
+              <div className="flex w-10 h-10 rounded-full bg-[#EAF4FF] justify-center items-center glow-hover">
                 <div className="group flex relative">
                   <a href="mailto:robertoesquiveltr16@gmail.com" className="items-center no-underline text-primary hover:text-primary-100" target="_blank" rel="noopener noreferrer">
                     <svg fill="currentColor" className="h-7 w-7" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +84,7 @@ const Hero = ({ language, esTelefono }) => {
                 </div>
               </div>
               <div className="mr-2" />
-              <div className="flex w-10 h-10 rounded-full bg-[#FFFFFF] justify-center items-center ">
+              <div className="flex w-10 h-10 rounded-full bg-[#EAF4FF] justify-center items-center glow-hover">
                 <div className="group flex relative">
                   <a href="/cv/CV_Roberto_Esquivel_Troncoso.pdf" className="items-center no-underline text-primary hover:text-primary-100" target="_blank" rel="noopener noreferrer">
                     <svg fill="currentColor" className="h-9 w-9" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

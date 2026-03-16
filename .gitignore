@@ -27,6 +27,7 @@ firebase.json
 *.sw?
 
 .env
+.uiux-agent/
 
 # vscode
 .vscode
