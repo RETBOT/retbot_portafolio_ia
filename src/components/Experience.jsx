@@ -55,6 +55,12 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+
+      {experience.impact ? (
+        <p className='mt-4 text-[#a9e8ff] text-[16px] sm:text-[16px] leading-7 border-l-2 border-[#22d3ee] pl-4'>
+          {experience.impact}
+        </p>
+      ) : null}
     </VerticalTimelineElement>
   );
 };

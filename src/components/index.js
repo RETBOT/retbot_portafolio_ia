@@ -5,6 +5,7 @@ import About from "./About";
 import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
+import Footer from "./Footer";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
@@ -19,6 +20,7 @@ export {
   Tech,
   Experience,
   Works,
+  Footer,
   Feedbacks,
   Contact,
   CanvasLoader,
