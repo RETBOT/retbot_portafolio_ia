@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Experience, Hero, Navbar, Tech, Works } from "./components";
+import { About, Experience, Footer, Hero, Navbar, Tech, Works } from "./components";
 
 const App = () => {
   const [language, setLanguage] = useState('en');
@@ -30,6 +30,30 @@ const App = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const isEnglish = language !== 'en';
+    const title = isEnglish
+      ? "Roberto Esquivel | Full Stack Software Developer"
+      : "Roberto Esquivel | Desarrollador Full Stack";
+    const description = isEnglish
+      ? "Professional portfolio of Roberto Esquivel Troncoso, Full Stack Developer specialized in web, mobile, and desktop software solutions using .NET, MAUI, Flutter, and SQL Server."
+      : "Portafolio profesional de Roberto Esquivel Troncoso, Desarrollador Full Stack especializado en soluciones web, moviles y de escritorio con .NET, MAUI, Flutter y SQL Server.";
+
+    document.title = title;
+    document.documentElement.lang = isEnglish ? 'en' : 'es';
+
+    const setMeta = (selector, value) => {
+      const node = document.querySelector(selector);
+      if (node) node.setAttribute('content', value);
+    };
+
+    setMeta('#meta-description', description);
+    setMeta('#og-title', title);
+    setMeta('#og-description', description);
+    setMeta('#twitter-title', title);
+    setMeta('#twitter-description', description);
+  }, [language]);
+
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
@@ -41,6 +65,7 @@ const App = () => {
         <Experience language={language} />
         <Tech esTelefono={esTelefono} />
         <Works language={language} esTelefono={esTelefono} />
+        <Footer language={language} />
       </div>
     </BrowserRouter>
   );

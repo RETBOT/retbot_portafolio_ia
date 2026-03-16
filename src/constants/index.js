@@ -152,7 +152,8 @@ const experiencesEs = [
       "Diseno, desarrollo y mantenimiento de aplicaciones web, moviles y de escritorio orientadas a procesos administrativos.",
       "Implementacion de funcionalidades con .NET, C#, .NET MAUI, SQL Server y APIs REST para integrar flujos operativos.",
       "Optimizacion de modulos existentes para mejorar estabilidad, tiempos de respuesta y experiencia de usuario.",
-    ]
+    ],
+    impact: "Impacto: fortalecimiento de la operacion diaria con soluciones mas estables, mantenibles y alineadas al negocio.",
   },
   {
     title: "Desarrollador de Software",
@@ -165,7 +166,8 @@ const experiencesEs = [
       "Construccion, mejora y publicacion de aplicaciones moviles multiplataforma con Xamarin y Flutter.",
       "Desarrollo de aplicaciones web y APIs REST con .NET, priorizando escalabilidad y mantenibilidad.",
       "Diseno y optimizacion de bases de datos en SQL Server para procesos transaccionales de negocio.",
-    ]
+    ],
+    impact: "Impacto: evolucion de plataformas empresariales con integraciones confiables y mejor continuidad operativa.",
   },
   {
     title: "Desarrollador web y móvil jr.",
@@ -178,7 +180,8 @@ const experiencesEs = [
       "Mantenimiento y evolucion de sitios web con jQuery, HTML, CSS y DevExpress.",
       "Soporte y actualizacion de sistemas heredados en Visual Basic 6.",
       "Integracion de APIs y servicios con Visual Basic 6 y SQL Server para aplicaciones web y moviles.",
-    ]
+    ],
+    impact: "Impacto: mejora de procesos internos mediante mantenimiento continuo y soporte tecnico efectivo en sistemas criticos.",
   },
   {
     title: "React.js y C# Asp.net Developer",
@@ -192,7 +195,8 @@ const experiencesEs = [
       "Uso de HtmlAgilityPack, HTML, JavaScript y CSS para construir soluciones de captura de informacion.",
       "Participacion en equipos interfuncionales y revisiones de codigo para mejorar calidad y mantenibilidad.",
       "Colaboracion en proyectos web con stack React.js, Express.js, Node.js y MongoDB.",
-    ]
+    ],
+    impact: "Impacto: automatizacion de tareas de captura de datos y fortalecimiento de la calidad tecnica en el desarrollo web.",
   }
 ];
 
@@ -207,7 +211,8 @@ const experiencesEn = [
       "Design, development, and maintenance of web, mobile, and desktop applications for administrative workflows.",
       "Feature implementation with .NET, C#, .NET MAUI, SQL Server, and REST APIs to integrate core operational flows.",
       "Optimization of existing modules to improve stability, response times, and user experience.",
-    ]
+    ],
+    impact: "Impact: stronger day-to-day operations through stable, maintainable software aligned with business needs.",
   },
   {
     title: "Software Developer",
@@ -220,7 +225,8 @@ const experiencesEn = [
       "Creation, enhancement, and release of cross-platform mobile apps using Xamarin and Flutter.",
       "Web applications and REST API development with .NET, focused on scalability and maintainability.",
       "SQL Server database design and query optimization for transactional business processes.",
-    ]
+    ],
+    impact: "Impact: continuous evolution of enterprise platforms with reliable integrations and improved operational continuity.",
   },
   {
     title:  "Jr. web and mobile developer",
@@ -234,6 +240,7 @@ const experiencesEn = [
       "Support and updates for legacy systems built with Visual Basic 6.",
       "API and service integrations with Visual Basic 6 and SQL Server for web and mobile applications.",
     ],
+    impact: "Impact: smoother internal processes through consistent maintenance and effective support of critical systems.",
   },
   {
     title: "React.js and C# Asp.net Developer",
@@ -248,6 +255,7 @@ const experiencesEn = [
       "Cross-functional collaboration and code review participation to improve quality and maintainability.",
       "Contribution to web solutions using React.js, Express.js, Node.js, and MongoDB.",
     ],
+    impact: "Impact: improved data collection workflows and stronger technical quality standards in web development.",
   }
 ];
 
@@ -256,6 +264,12 @@ const projectsEn = [
     name: "SISVET",
     description:
       "Application designed to simplify inventory control and merchandise management in warehouses and stores, enabling quick registration of product inventory, goods receiving, and item returns.",
+    challenge:
+      "Inventory control processes required a practical mobile workflow for daily operations.",
+    solution:
+      "A .NET MAUI application was implemented to centralize inventory, goods reception, and return records in one interface.",
+    outcome:
+      "The team gained a clearer and more consistent operational flow for warehouse activities.",
     tags: [
       {
         name: ".NET MAUI",
@@ -274,6 +288,12 @@ const projectsEn = [
     name: "Novapak 365",
     description:
       "Mobile app developed at Novapak to support company operations from one place, with a smooth workflow and practical features for internal users.",
+    challenge:
+      "Operational activities were distributed across different tools and required a unified mobile experience.",
+    solution:
+      "A Flutter application was built to concentrate key internal processes and streamline task execution.",
+    outcome:
+      "Teams improved process follow-up with a more direct and organized operational workflow.",
     tags: [
       {
         name: "Flutter",
@@ -603,6 +623,12 @@ const projectsEs = [
     name: "SISVET",
     description:
       "Aplicacion disenada para facilitar el control de inventarios y la gestion de mercancia en almacenes o tiendas. Permite registrar de forma rapida el inventario de productos, la recepcion de mercancia y la devolucion de articulos.",
+    challenge:
+      "Los procesos de control de inventario requerian un flujo movil practico para la operacion diaria.",
+    solution:
+      "Se implemento una aplicacion en .NET MAUI para centralizar inventario, recepcion y devoluciones en una sola interfaz.",
+    outcome:
+      "El equipo obtuvo un flujo operativo mas claro y consistente para las actividades de almacen.",
     tags: [
       {
         name: ".NET MAUI",
@@ -621,6 +647,12 @@ const projectsEs = [
     name: "Novapak 365",
     description:
       "Aplicacion movil desarrollada en Novapak para centralizar operaciones de la empresa en un solo lugar, con flujo agil y funcionalidades practicas para usuarios internos.",
+    challenge:
+      "Las actividades operativas estaban distribuidas en diferentes herramientas y requerian una experiencia movil unificada.",
+    solution:
+      "Se desarrollo una aplicacion Flutter para concentrar procesos internos clave y agilizar la ejecucion de tareas.",
+    outcome:
+      "Los equipos mejoraron el seguimiento de procesos con un flujo de trabajo mas directo y ordenado.",
     tags: [
       {
         name: "Flutter",
