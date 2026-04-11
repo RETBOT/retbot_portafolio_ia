@@ -68,6 +68,8 @@ import novapakordenes from './novapak_ordenes.png'
 import novapak365 from './NOVAPAK360.png'
 import sisvet from './SISVET.png'
 import basculas from './basculas.png'
+import retbot_portafolio_ia from './retbot_portafolio_ia.png'
+import retflow from './RETFlow.png'
 
 export {
   logo,
@@ -136,4 +138,6 @@ export {
   novapak365,
   sisvet,
   basculas,
+  retbot_portafolio_ia,
+  retflow,
 };

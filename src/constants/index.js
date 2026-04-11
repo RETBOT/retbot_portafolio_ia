@@ -38,6 +38,8 @@ import {
   novapak365,
   sisvet,
   basculas,
+  retbot_portafolio_ia,
+  retflow,
 
 } from "../assets";
 
@@ -261,6 +263,68 @@ const experiencesEn = [
 
 const projectsEn = [
   {
+    name: "RETFlow CRM",
+    description:
+      "CRM for customer relationship management at RETEX. Manage clients, prospects, activities, opportunities, and generate real-time executive reports.",
+    challenge:
+      "Companies need a centralized system to track commercial operations and sales pipelines efficiently.",
+    solution:
+      "A full-stack CRM built with React 19, Node.js, Express, TypeScript, and SQL Server. Features include dashboard with KPIs, client/prospect management, interactive maps with route optimization, pipeline kanban, activity tracking with GPS check-ins, product catalog, reporting with Excel/PDF export, email integration, and complete user management with roles and permissions.",
+    outcome:
+      "Teams gained a complete view of commercial operations with real-time metrics and automated workflows.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+    ],
+    image: retflow,
+    icon: github,
+    source_code_link: "https://github.com/RETBOT/RETFlow",
+  },
+  {
+    name: "RETBOT Portfolio IA",
+    description:
+      "My developer portfolio repository showcasing projects, built with Vite, React, and Tailwind. Uses OpenCode AI to enhance development workflow.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: retbot_portafolio,
+    icon: github,
+    source_code_link: "https://github.com/RETBOT/retbot_portafolio_ia",
+  },
+  {
     name: "SISVET",
     description:
       "Application designed to simplify inventory control and merchandise management in warehouses and stores, enabling quick registration of product inventory, goods receiving, and item returns.",
@@ -288,12 +352,6 @@ const projectsEn = [
     name: "Novapak 365",
     description:
       "Mobile app developed at Novapak to support company operations from one place, with a smooth workflow and practical features for internal users.",
-    challenge:
-      "Operational activities were distributed across different tools and required a unified mobile experience.",
-    solution:
-      "A Flutter application was built to concentrate key internal processes and streamline task execution.",
-    outcome:
-      "Teams improved process follow-up with a more direct and organized operational workflow.",
     tags: [
       {
         name: "Flutter",
@@ -620,6 +678,68 @@ const projectsEn = [
 
 const projectsEs = [
   {
+    name: "RETFlow CRM",
+    description:
+      "Sistema de gestión de relaciones con clientes (CRM) para RETEX. Permite gestionar clientes, prospectos, actividades, oportunidades y generar reportes ejecutivos en tiempo real.",
+    challenge:
+      "Las empresas necesitan un sistema centralizado para rastrear operaciones comerciales y pipelines de venta de manera eficiente.",
+    solution:
+      "Un CRM completo construido con React 19, Node.js, Express, TypeScript y SQL Server. Incluye dashboard con KPIs, gestión de clientes/prospectos, mapas interactivos con optimización de rutas, pipeline kanban, seguimiento de actividades con check-in GPS, catálogo de productos, reportes con exportación a Excel/PDF, integración de email y gestión completa de usuarios con roles y permisos.",
+    outcome:
+      "Los equipos obtienen una visión completa de las operaciones comerciales con métricas en tiempo real y flujos de trabajo automatizados.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+    ],
+    image: retflow,
+    icon: github,
+    source_code_link: "https://github.com/RETBOT/RETFlow",
+  },
+  {
+    name: "RETBOT Portafolio IA",
+    description:
+      "Repositorio de mi portafolio como desarrollador, donde presento mis proyectos y utilizo OpenCode con IA para potenciar mi desarrollo y CV.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: retbot_portafolio_ia,
+    icon: github,
+    source_code_link: "https://github.com/RETBOT/retbot_portafolio_ia",
+  },
+  {
     name: "SISVET",
     description:
       "Aplicacion disenada para facilitar el control de inventarios y la gestion de mercancia en almacenes o tiendas. Permite registrar de forma rapida el inventario de productos, la recepcion de mercancia y la devolucion de articulos.",
@@ -647,12 +767,6 @@ const projectsEs = [
     name: "Novapak 365",
     description:
       "Aplicacion movil desarrollada en Novapak para centralizar operaciones de la empresa en un solo lugar, con flujo agil y funcionalidades practicas para usuarios internos.",
-    challenge:
-      "Las actividades operativas estaban distribuidas en diferentes herramientas y requerian una experiencia movil unificada.",
-    solution:
-      "Se desarrollo una aplicacion Flutter para concentrar procesos internos clave y agilizar la ejecucion de tareas.",
-    outcome:
-      "Los equipos mejoraron el seguimiento de procesos con un flujo de trabajo mas directo y ordenado.",
     tags: [
       {
         name: "Flutter",
