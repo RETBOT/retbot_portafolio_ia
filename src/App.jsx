@@ -63,7 +63,7 @@ const App = () => {
         </div>
         <About language={language} />
         <Experience language={language} />
-        <Tech esTelefono={esTelefono} />
+        <Tech language={language} esTelefono={esTelefono} />
         <Works language={language} esTelefono={esTelefono} />
         <Footer language={language} />
       </div>
