@@ -40,6 +40,9 @@ import {
   basculas,
   retbot_portafolio_ia,
   retflow,
+  ai_engineer,
+  opencode,
+  ai_agents,
 
 } from "../assets";
 
@@ -87,8 +90,8 @@ const services = [
     icon: movildev,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "AI & DevOps Engineer",
+    icon: ai_engineer,
   },
 ];
 
@@ -141,21 +144,30 @@ const technologies = [
     name: "vb6",
     icon: vb6,
   },
+  {
+    name: "OpenCode",
+    icon: opencode,
+  },
+  {
+    name: "AI Agents",
+    icon: ai_agents,
+  },
 ];
 
 const experiencesEs = [
   {
     title: "Desarrollador de Software Full Stack",
-    company_name: "Basculas Revuelta",
+    company_name: "Básculas Revuelta",
     icon: basculas,
     iconBg: "#FFFFFF",
     date: "Nov 2025 - Actualidad",
     points: [
-      "Diseno, desarrollo y mantenimiento de aplicaciones web, moviles y de escritorio orientadas a procesos administrativos.",
-      "Implementacion de funcionalidades con .NET, C#, .NET MAUI, SQL Server y APIs REST para integrar flujos operativos.",
-      "Optimizacion de modulos existentes para mejorar estabilidad, tiempos de respuesta y experiencia de usuario.",
+      "Diseño, desarrollo y mantenimiento de aplicaciones web, móviles y de escritorio para procesos administrativos.",
+      "Implementación de funcionalidades con .NET, C#, .NET MAUI, SQL Server y APIs REST para integrar flujos operativos.",
+      "Optimización de módulos existentes para mejorar estabilidad, tiempos de respuesta y experiencia de usuario.",
+      "Implementación de arquitectura multi-agente con IA, prácticas DevOps y optimización de modelos, combinando agentes especializados, Git, automatización y supervisión del código para mejorar la productividad y la calidad del desarrollo.",
     ],
-    impact: "Impacto: fortalecimiento de la operacion diaria con soluciones mas estables, mantenibles y alineadas al negocio.",
+    impact: "Impacto: integración exitosa de IA en procesos operativos mediante un ecosistema multi-agente escalable con supervisión y desarrollo activo.",
   },
   {
     title: "Desarrollador de Software",
@@ -213,8 +225,9 @@ const experiencesEn = [
       "Design, development, and maintenance of web, mobile, and desktop applications for administrative workflows.",
       "Feature implementation with .NET, C#, .NET MAUI, SQL Server, and REST APIs to integrate core operational flows.",
       "Optimization of existing modules to improve stability, response times, and user experience.",
+      "Implementation of multi-agent architecture with AI, DevOps practices, and model optimization, combining specialized agents, Git, automation, and code supervision to improve development productivity and quality.",
     ],
-    impact: "Impact: stronger day-to-day operations through stable, maintainable software aligned with business needs.",
+    impact: "Impact: successful integration of AI into operational processes through a scalable multi-agent ecosystem with active supervision and development.",
   },
   {
     title: "Software Developer",

@@ -4,15 +4,15 @@ import { styles } from "../styles"
 const Hero = ({ language, esTelefono }) => {
   const [saludo, setSaludo] = useState('Hola, soy');
   const [dev, setDev] = useState('Desarrollador Full Stack de Software');
-  const [resumen, setResumen] = useState('Especializado en soluciones web, moviles y de escritorio para entornos empresariales.');
+  const [resumen, setResumen] = useState('Especializado en soluciones web, móviles y de escritorio para plataformas empresariales, con experiencia en .NET, MAUI, Flutter, SQL Server y APIs REST. Actualmente implementando arquitecturas multi-agente con IA y prácticas DevOps.');
 
   useEffect(() => {
     setSaludo(language !== 'en' ? `Hi, I'm` : 'Hola, soy');
     setDev(language !== 'en' ? "Full Stack Software Developer" : 'Desarrollador Full Stack de Software');
     setResumen(
       language !== 'en'
-        ? 'Focused on web, mobile, and desktop solutions for business platforms, with strong experience in .NET, MAUI, Flutter, SQL Server, and REST APIs.'
-        : 'Especializado en soluciones web, moviles y de escritorio para plataformas empresariales, con experiencia en .NET, MAUI, Flutter, SQL Server y APIs REST.'
+        ? 'Focused on web, mobile, and desktop solutions for business platforms, with experience in .NET, MAUI, Flutter, SQL Server, and REST APIs. Currently implementing multi-agent architectures with AI and DevOps practices.'
+        : 'Especializado en soluciones web, móviles y de escritorio para plataformas empresariales, con experiencia en .NET, MAUI, Flutter, SQL Server y APIs REST. Actualmente implementando arquitecturas multi-agente con IA y prácticas DevOps.'
     );
   }, [language])
 
