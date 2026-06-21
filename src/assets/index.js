@@ -70,6 +70,9 @@ import sisvet from './SISVET.png'
 import basculas from './basculas.png'
 import retbot_portafolio_ia from './retbot_portafolio_ia.png'
 import retflow from './RETFlow.png'
+import ai_engineer from './ai_engineer.png'
+import opencode from './opencode.png'
+import ai_agents from './ai_agents.png'
 
 export {
   logo,
@@ -140,4 +143,7 @@ export {
   basculas,
   retbot_portafolio_ia,
   retflow,
+  ai_engineer,
+  opencode,
+  ai_agents,
 };
